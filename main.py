@@ -71,3 +71,7 @@ def get_user_data(input_data):
 #    pass
 
 
+input_ = input("Enter strings separated by space: ")
+prefix_finder = LongestPrefix(input_)
+output = prefix_finder.process()
+print(f"Longest prefix is {output}")
