@@ -54,18 +54,17 @@
 # print(f"Longest prefix is {output}")
 
 
-def longcom(str):
+def prefix_finder(str):
     lcp = ""
     i = 0
     while i < minlen:
         char = str_list[0][i]
-        print(char)
         for j in range(1,len(str_list)):
             if str_list[j][i] != char:
                 return lcp
         lcp = lcp + char
         i +=1
-    return lcp 
+    return lcp
 
 
 str = input("Enter the strings ")
@@ -75,5 +74,7 @@ if len(str_list) == 0:
 minlen = (len(str_list[0]))
 for _ in range(len(str_list)):
     minlen = min(len(str_list[_]), minlen)
-output = longcom(str_list)
+output = prefix_finder(str_list)
+print(f"The longest common prefix is {output}")
+
 
