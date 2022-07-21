@@ -54,7 +54,7 @@
 # print(f"Longest prefix is {output}")
 
 
-def longcom(self):
+def longcom(str):
     lcp = ""
     i = 0
     while i < minlen:
@@ -75,6 +75,5 @@ if len(str_list) == 0:
 minlen = (len(str_list[0]))
 for _ in range(len(str_list)):
     minlen = min(len(str_list[_]), minlen)
-print(minlen)
 output = longcom(str_list)
 
