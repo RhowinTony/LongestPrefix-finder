@@ -51,22 +51,23 @@
 # output = prefix_finder.process()
 # print(f"Longest prefix is {output}")
 
-Strs = ("flower,flight,flow")
+# Strs = ("flower,flight,flow")
 
-if len(Strs) == 0:
-    print("None")
+# if len(Strs) == 0:
+#     print("None")
 
-minlen = len(Strs[0])
-for i in range(len(Strs)):
-    minlen = min(len(Strs[i]),minlen)
+# minlen = len(Strs[0])
+# for i in range(len(Strs)):
+#     minlen = min(len(Strs[i]),minlen)
 
-lcp = ""
-i = 0
-while i < minlen:
-    char = Strs[0][i]
-    for j in range(1,len(Strs)):
-        if Strs[j][i] != char:
-            print(lcp)
-        else:
-            lcp = lcp + char
-print(lcp)
+# lcp = ""
+# i = 0
+# while i < minlen:
+#     char = Strs[0][i]
+#     for j in range(1,len(Strs)):
+#         if Strs[j][i] != char:
+#             print("0")
+#         else:
+#             lcp = lcp + char
+#     i += 1
+# print(lcp)
