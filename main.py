@@ -71,3 +71,15 @@
 #             lcp = lcp + char
 #     i += 1
 # print(lcp)
+
+str = input("Enter the strings ")
+str_list = str.split()
+print(str_list)
+# if len(str) == 0:
+#     print("No lcp")
+# minlen = len(str[0])
+# print(minlen)
+# for i in range(len(str)):
+#     minlen = min(len(str[i]), minlen)
+
+# print(minlen)
